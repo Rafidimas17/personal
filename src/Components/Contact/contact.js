@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./contact.scss";
+import Shake from "../../assets/shake.jpg";
 
 export default function Contact() {
   const [message, setMessage] = useState(false);
@@ -12,7 +13,7 @@ export default function Contact() {
   return (
     <div className="contact" id="contact">
       <div className="left">
-        <img src="assets/shake.svg" alt="" />
+        <img src={Shake} alt="" />
       </div>
       <div className="right">
         <h2>Contact.</h2>
