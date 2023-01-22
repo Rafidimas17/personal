@@ -6,7 +6,7 @@ import Intro from "./Components/Intro/intro";
 import Portofolio from "./Components/Portofolio/Portofolio";
 import Skills from "./Components/Skills/Skills";
 import Contact from "./Components/Contact/contact";
-import About from "./Components/About/about";
+
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -16,7 +16,6 @@ function App() {
       <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <Intro />
       <div className="container">
-        <About />
         <Skills />
         <Portofolio />
         <Contact />
