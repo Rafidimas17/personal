@@ -4,9 +4,9 @@ import React, { useState } from "react";
 import Menu from "./Components/menu/menu";
 import Intro from "./Components/Intro/intro";
 import Portofolio from "./Components/Portofolio/Portofolio";
-import Works from "./Components/Works/Works";
-import Testimonials from "./Components/testimonial/testimonial";
+import Skills from "./Components/Skills/Skills";
 import Contact from "./Components/Contact/contact";
+import About from "./Components/About/about";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -14,12 +14,23 @@ function App() {
     <div className="app">
       <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-      <div className="sections">
-        <Intro />
+      <Intro />
+      <div className="container">
+        <About />
+        <Skills />
         <Portofolio />
-        <Works />
-        <Testimonials />
         <Contact />
+      </div>
+      <div class="card" style={{ border: "none" }}>
+        <div class="card-body">
+          <p
+            style={{ fontFamily: "Poppins", fontSize: 15 }}
+            className="text-center"
+          >
+            Create by rafidimas &#07; 2023
+          </p>
+          <footer class="footer"></footer>
+        </div>
       </div>
     </div>
   );

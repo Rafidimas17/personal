@@ -1,5 +1,20 @@
 @import "../../global.scss";
 
+
+.button {
+        width: 150px;
+        height: 50px;
+        color: white;
+        background-color: crimson;
+        border: none;
+        border-radius: 5px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 1s ease;
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
 .contact {
   background-color: white;
   display: flex;
@@ -57,20 +72,7 @@
         }
       }
 
-      button {
-        width: 150px;
-        height: 30px;
-        color: white;
-        background-color: crimson;
-        border: none;
-        border-radius: 10px;
-        font-weight: 500;
-        cursor: pointer;
-
-        &:focus {
-          outline: none;
-        }
-      }
+      
 
       span {
         color: green;

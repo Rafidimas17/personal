@@ -1,80 +1,74 @@
 import React, { useEffect, useState } from "react";
-import PortfolioList from "../PortofolioList/PortofolioList";
+import iconBerkas from "../../assets/berkas.png";
 import "./Portofolio.scss";
-import {
-  featuredPortfolio,
-  webPortfolio,
-  mobilePortfolio,
-  designPortfolio,
-  contentPortfolio,
-} from "../../data";
+import { webPortfolio } from "../../data";
 
 export default function Portfolio() {
   const [selected, setSelected] = useState("featured");
   const [data, setData] = useState([]);
   const list = [
     {
-      id: "featured",
-      title: "Featured",
-    },
-    {
       id: "web",
       title: "Web App",
-    },
-    {
-      id: "mobile",
-      title: "Mobile App",
-    },
-    {
-      id: "design",
-      title: "Design",
-    },
-    {
-      id: "content",
-      title: "Content",
     },
   ];
 
   useEffect(() => {
     switch (selected) {
-      case "featured":
-        setData(featuredPortfolio);
-        break;
       case "web":
         setData(webPortfolio);
         break;
-      case "mobile":
-        setData(mobilePortfolio);
-        break;
-      case "design":
-        setData(designPortfolio);
-        break;
-      case "content":
-        setData(contentPortfolio);
-        break;
       default:
-        setData(featuredPortfolio);
+        setData(webPortfolio);
     }
   }, [selected]);
 
   return (
-    <div className="portfolio" id="portfolio">
-      <h1>Portofolio</h1>
-      <ul>
-        {list.map((item) => (
-          <PortfolioList
-            title={item.title}
-            active={selected === item.id}
-            setSelected={setSelected}
-            id={item.id}
-          />
-        ))}
-      </ul>
-      <div className="container">
+    <div className="container" id="portofolio">
+      <h4
+        className="text-center mt-5"
+        style={{ fontFamily: "Oswald", fontSize: 50 }}
+      >
+        Portofolio
+      </h4>
+      <div class="row row-cols-1 row-cols-md-3 g-4 mt-2">
         {data.map((d) => (
-          <div className="item">
-            <img src={d.img} alt="" />
-            <h3>{d.title}</h3>
+          <div class="col">
+            <div class="card h-100 shadow-sm" style={{ border: "none" }}>
+              <img
+                src={d.img}
+                class="card-img-top"
+                alt={d.img}
+                style={{ height: 200 }}
+              />
+              <div class="card-body">
+                <h5 class="card-title text-center">{d.title}</h5>
+                <ul>
+                  <p></p>
+                  <li style={{ fontFamily: "Oswald", fontSize: 15 }}>
+                    {d.tech}
+                  </li>
+                  <li style={{ fontFamily: "Oswald", fontSize: 15 }}>
+                    {d.utility}
+                  </li>
+                  <li style={{ fontFamily: "Oswald", fontSize: 15 }}>
+                    {d.event}
+                  </li>
+                </ul>
+              </div>
+              <div class="card-footer">
+                <small class="text">
+                  <a
+                    href={d.url}
+                    className="text-decoration-none"
+                    style={{ fontFamily: "Oswald" }}
+                  >
+                    <img src={iconBerkas} style={{ width: 25 }} alt="icon" />{" "}
+                    Code
+                  </a>
+                </small>
+              </div>
+            </div>
           </div>
         ))}
       </div>
