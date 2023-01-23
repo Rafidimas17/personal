@@ -5,8 +5,8 @@ import Foto from "../../assets/foto.svg";
 export default function Intro() {
   return (
     <div className="intro" id="intro">
-      <div className="left">
-        <div className="wrapper mr-3">
+      <div className="left justify-content-center">
+        <div className="wrapper mr-3 justify-content-center">
           <h2 className="mt-5">Hi Dear, I'm</h2>
           <h1 className="mt-2">Rafi Dimas Ariyanto</h1>
           <h3 className="mt-2">Web Developer</h3>
