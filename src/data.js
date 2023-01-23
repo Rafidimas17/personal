@@ -35,6 +35,7 @@ export const webPortfolio = [
     utility:
       "Website for branding using React Js, Bootstrap with a touch of sass",
     event: "Self Study",
+    url: "https://github.com/Rafidimas17/personal",
   },
   {
     id: 6,

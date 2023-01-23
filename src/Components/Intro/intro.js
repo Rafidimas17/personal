@@ -14,7 +14,7 @@ export default function Intro() {
             <div className="col">
               <a
                 className="text-center"
-                href="https://www.linkedin.com/in/rafi-dimas-ariyanto-8932531b8/"
+                href="https://drive.google.com/file/d/1jq7hgWG55nNFirH5Ig7wC5IKEPZsEsp8/view"
               >
                 <button className="hireme mt-3">Hire Me</button>
               </a>
