@@ -132,10 +132,10 @@ export default function Skills() {
         <div className="col">
           <div className="card h-100 shadow-sm " style={{ border: "none" }}>
             <img
-              src="https://cdn4.iconfinder.com/data/icons/logos-3/568/php-logo-512.png"
+              src="https://cdn.iconscout.com/icon/free/png-512/codeigniter-4-1175201.png?f=avif&w=256"
               style={{
                 height: 150,
-                width: 190,
+                width: 160,
                 display: "block",
                 margin: "auto",
               }}
@@ -147,7 +147,7 @@ export default function Skills() {
                 className="card-title text-center"
                 style={{ fontFamily: "Oswald", fontSize: 25 }}
               >
-                PHP
+                CodeIgniter
               </h5>
             </div>
           </div>
