@@ -12,7 +12,7 @@ function App() {
   // const [menuOpen, setMenuOpen] = useState(false);
   return (
     <div className="app">
-    <h5>Wesbite sedang dalam proses perbaikan</h5>
+    <h5>Wesbite sedang dalam proses perbaikan..</h5>
       // <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       // <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       // <Intro />
