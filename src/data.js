@@ -23,9 +23,9 @@ export const webPortfolio = [
     title: "Mountler Website",
     img: "images/mountler.jpg",
     tech: "Node Js, Express Js, MongoDB, React Js, Bootstrap",
-    utility: "Building a website for booking climbs using the MERN stack",
+    utility: "Building a website for booking climbs using the MERN stack and Midtrans Payment Gateway",
     event: "Self Study",
-    url: "https://github.com/Rafidimas17/cakrawala_code",
+    url: "https://mountler.com",
   },
   {
     id: 4,
