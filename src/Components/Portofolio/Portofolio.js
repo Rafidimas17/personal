@@ -27,8 +27,7 @@ export default function Portfolio() {
     <div className="container" id="portofolio">
       <h4
         className="text-center mt-5"
-        style={{ fontFamily: "Oswald", fontSize: 50 }}
-      >
+        style={{ fontFamily: "Oswald", fontSize: 50 }}>
         Portofolio
       </h4>
       <div class="row row-cols-1 row-cols-md-3 g-4 mt-2">
@@ -61,10 +60,9 @@ export default function Portfolio() {
                   <a
                     href={d.url}
                     className="text-decoration-none"
-                    style={{ fontFamily: "Oswald" }}
-                  >
+                    style={{ fontFamily: "Oswald" }}>
                     <img src={iconBerkas} style={{ width: 25 }} alt="icon" />{" "}
-                    Code
+                    Link
                   </a>
                 </small>
               </div>
